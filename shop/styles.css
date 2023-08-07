@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+    
+    min-height: 100%;
+}
+
+.nav ul {
+    margin: 0;
+    background-color: black;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.main-header {
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    /* font-family: "Booter - Zero Zero"; */
+    font-weight: normal;
+    color: black;
+}
+
+
+/* hero-image section */
+.hero-image {
+    height: 60vh;
+    background-image: url(./images/dark.jfif);
+    color: white;
+}
+
+.hero-image h1 {
+    height: 100%;
+    font-size: 50px;
+    padding-top: 10%;
+    padding-left: 8%;
+    color: white;
+}
+
+/* Hero-image section ends */
+
+
+a {
+    text-decoration: none;
+    color: black;
+} 
+
+/* product cards section */
+.product-cards {
+    height: 50vh;
+}
+
+.product-cards h2 {
+    height: 5%;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.product-cards, .product-cards div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-cards div {
+    height: 40%;
+    width: 40%;
+    /* margin: 0 auto 0 auto; */
+}
+
+.product-cards div p, .product-cards div img {
+height: 100%;
+width: 49%;
+text-align: center;
+}
+
+.product-cards h2, .product-cardsdiv p {
+     text-align: center;  
+}
+
+.product-cards div p {
+    padding-top: 20%;
+}
+
+/* product section ends */
+
+
+/* trending-products section */
+.trending {
+    height: 80vh;
+    column-gap: 2%;
+}
+
+.trending, .trending-products-header, .trending-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trending-products-header {
+    height: 10%;
+    column-gap: 10%;
+    width: 100%;
+}
+
+.trending-products-header h2 {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.trending-products-header a {
+    height: 30%;
+    width: fit-content;
+    text-align: center;
+    padding-top: 0.5%;
+}
+
+.trending-products {
+    height: 35%;
+    width: 23%;
+    background-image: url(./images/dark.jfif);
+    color: white;
+    align-items: flex-end;
+}
+
+ .trending-products span {
+    display: block;
+    text-align: center;
+}
+
+/* trending products ends */
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+
+
+
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+
+footer {
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    background-color: black;
+    color: white;
+}
+
+ .about, .shop, .support, .Newsletter {
+    width: 20%;
+    height: 50%;
+ }
+
+ .Newsletter {
+    width: fit-content;
+ }
+
+ footer h3 {
+    font-size: 15px;
+ }
+
+ footer a, footer p, footer input {
+    font-size: 10px;
+ }
+
+ .about p {
+    height: 90%;
+ }
+
+ .about {
+    margin-right: 2%;
+ }
+
+ .shop a, .support a {
+    display: block;
+    margin-top: 5%;
+    color: white; 
+ }
+
+ .Newsletter p, .Newsletter input {
+    margin-top: 5%;
+    width: 100%;
+ }
+
+ .Newsletter .subscribe-button {
+    width: 50%;
+ }
+
+/* footer ends */
+
+@media (max-width: 750px) {
+    .Newsletter input {
+        width: 90%;
+    }
+
+    .product-cards {
+        height: 150vh;
+    }
+
+    .product-cards div {
+        height: 22%;
+        width: 100%;
+    }
+
+    .product-cards .last {
+        margin-bottom: 10%;
+    }
+
+    .trending {
+        height: 110vh;
+        margin-bottom: 10%;
+    }
+
+    .trending-products {
+        width: 45%;
+        height: 22%;
+    }
+
+    .wig-article {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+

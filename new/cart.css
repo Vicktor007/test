@@ -1,0 +1,254 @@
+#check {display: none;}
+
+
+    .men {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+        background-color: #777;
+    }
+   
+    #check:checked ~ .men {right: 0;}
+
+
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+
+
+
+/* .shop-item {
+    margin: 30px;
+} */
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    border: inherit;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-head {
+position: sticky;
+top: 0;
+height: 10%;
+}
+
+.cart-count-badge {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 20px;
+    width: 25px;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid red; */
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.cart-item {
+    width: 45%;
+    padding-left: 5%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-right: 12%;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.btn-purchase {
+    height: 5%;
+    width: 20%;
+    margin: 10px auto;
+}
+
+
+
+
+header nav ul li a {
+    font-size: 1.3rem;
+    color: white;
+    display: inline-block;
+}
+    
+    
+     .close-menu {
+        position: absolute;
+        color: var(--color1);
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+    
+
+
+    .open-menu {
+        font-size: 1.3rem;
+      height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    }
+
+
+    .close-menu {
+        top: 20px;
+        right: 20px;
+        width: 25px;
+        height: 25px;
+        background: url(./images/xmark-solid.svg) center center/ contain;
+      background-repeat: no-repeat;
+      background-color: #eee;
+    }
+
+
+    
